@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100vw;
+  font-family: 'Golos Text', sans-serif;
+}
+
+#quote-box {
+  margin: auto;
+  padding: 50px;
+  width: 40%;
+  background-color: white;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+#author {
+  text-align: right;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 1.5rem;
+}
+
+.button {
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: medium;
+  cursor: pointer;
+  border: 1px solid transparent;
+  font-family: inherit;
+  transition: border-color 0.25s;
+}
+
+.button:hover, .button:active, .button:focus {
+  outline: none;
+  opacity: .8;
+  color: #fff;
+}
+
+.content {
+  margin-left: 5px;
+}
+
+@media (max-width: 500px) {
+
+  #quote-box {
+    padding: 20px;
+    width: 60%;
+    font-size: 1.2rem;
+  }
+
+  #author {
+    margin-top: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .btn-container {
+    margin-top: 1.2rem;
+  }
+}
+
